@@ -1,2 +1,2 @@
-# tour-heroes
-Tour Heroes with angular 1.3
+# tour-of-heroes
+Tour of Heroes with angular 1.3
