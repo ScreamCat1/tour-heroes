@@ -1,0 +1,51 @@
+.hero-detail {
+
+}
+
+.hero-detail-img-wrap {
+  height: 450px;
+
+  overflow: hidden;
+}
+
+.hero-detail-description {
+	margin-top: 60px;
+	margin-bottom: 30px;
+
+	font-size: 24px;
+}
+
+.hero-detail-longtitle {
+	font-size: 20px;
+
+	margin-bottom: 60px;
+}
+
+.hero-detail-character-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero-detail-character-list {
+	max-width: 600px;
+	width: 100%;
+}
+
+.hero-detail-character-field {
+	display: flex;
+	justify-content: space-between;
+
+	margin-top: 30px;
+
+	text-align: right;
+}
+
+.hero-detail-character-field > span {
+	max-width: 65%;
+}
+
+.hero-detail-character-type {
+	font-weight: bold;
+
+	max-width: 35%;
+}
