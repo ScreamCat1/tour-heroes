@@ -1,0 +1,45 @@
+<div class="hero-detail">
+	<h1>{{$ctrl.hero.name | uppercase}}</h1>
+	<h2>{{$ctrl.hero.character}}</h2>
+	<div class="hero-detail-img-wrap">
+		<img ng-src="images/{{$ctrl.hero.img}}" alt="{{$ctrl.hero.name}}">
+	</div>
+	<div class="row hero-detail-description">
+		{{$ctrl.hero.description}}
+	</div>
+	<p class="row hero-detail-longtitle">
+		{{$ctrl.hero.longtitle}}
+	</p>
+</div>
+<div class="row hero-detail-character-wrap">
+	<ul class="hero-detail-character-list">
+		<li class="hero-detail-character-field">
+			<span class="hero-detail-character-type">Powers:</span>
+			<span>{{$ctrl.hero['character facts'].powers}}</span>
+		</li>
+		<li class="hero-detail-character-field">
+			<span class="hero-detail-character-type">Occupation:</span>
+			<span>{{$ctrl.hero['character facts'].occupation}}</span>
+		</li>
+		<li class="hero-detail-character-field">
+			<span class="hero-detail-character-type">Alias/AKA:</span>
+			<span>{{$ctrl.hero['character facts']['alias/AKA']}}</span>
+		</li>
+	</ul>
+	<ul class="hero-detail-character-list">
+		<li class="hero-detail-character-field">
+			<span class="hero-detail-character-type">Facebook:</span>
+			<span>
+				<a ng-href="{{$ctrl.hero['character facts'].facebook}}">{{$ctrl.hero['character facts'].facebook}}</a>
+			</span>
+		</li>
+		<li class="hero-detail-character-field">
+			<span class="hero-detail-character-type">First Appearence:</span>
+			<span>{{$ctrl.hero['character facts']['first appearance']}}</span>
+		</li>
+		<li class="hero-detail-character-field">
+			<span class="hero-detail-character-type">Real Name:</span>
+			<span>{{$ctrl.hero['character facts']['real name']}}</span>
+		</li>
+	</ul>
+</div>

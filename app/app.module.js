@@ -1,1 +1,4 @@
-var app = angular.module('heroesApp', []);
+var app = angular.module('heroesApp', [
+  'ngAnimate',
+  'heroDetail'
+]);

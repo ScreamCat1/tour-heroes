@@ -2,15 +2,23 @@
 <html lang="en" ng-app="heroesApp">
   <head>
     <meta charset="utf-8">
-    <title>Google Phone Gallery</title>
+    <title>Tour of Heroes</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="hero-detail/hero-detail.css">
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="app.module.js"></script>
+    <script src="hero-detail/hero-detail.module.js"></script>
+    <script src="hero-detail/hero-detail.component.js"></script>
+
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
   </head>
   <body>
-    <div>{{Initial settings for app}}</div>
+    <div>{{'Initial settings for app'}}</div>
+    <hero-detail></hero-detail>
   </body>
 </html>

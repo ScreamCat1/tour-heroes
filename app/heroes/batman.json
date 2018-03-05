@@ -1,0 +1,15 @@
+{
+  "name": "BATMAN",
+  "character": "The Dark Knight",
+  "img": "batman-large-img.jpg",
+  "description": "Dark Knight. Caped Crusader. World’s Greatest Detective. Whatever you know him as, wherever you know him from—the blockbuster movies, TV shows, video games, cartoons, or millions of comics—Batman is proof you don’t need superpowers to be a superhero… and the poster boy for what a bad childhood can do to you.",
+  "longtitle": "Millionaire Bruce Wayne was just a kid when he watched his parents get gunned down during a mugging in Gotham City. The crime would define his life, as he dedicated himself to becoming the world’s greatest weapon against crime—the Batman. Forget his Batarangs, Batmobile, or Utility Belt filled with high-tech weapons. Batman is the most feared superhero of all, because he’s pushed himself to the absolute pinnacle of human achievement. He’s a brilliant detective who’s mastered fighting techniques the world’s barely heard of. An Olympic-caliber athlete with a plan for every occasion, Batman’s seemingly always five steps ahead of his foes. But in his crusade against injustice, two questions always loom: How far will he go to protect the innocent, and will he sacrifice his humanity along the way?",
+  "character facts": {
+  "powers": "exceptional martial artist, combat strategy, inexhaustible wealth, brilliant deductive skill, advanced technology",
+  "occupation": "CEO of Wayne Enterprises",
+  "alias/AKA": "Dark Knight, Caped Crusader, Matches Malone",
+  "facebook": "https://www.facebook.com/batman",
+  "first appearance": "DETECTIVE COMICS #27 (1939)",
+  "real name": "Bruce Wayne"
+  }
+}
