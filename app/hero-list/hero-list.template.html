@@ -1,0 +1,10 @@
+<div class="hero-list-sort" >
+    sorted by:
+<button ng-click="$ctrl.toggleSorted()">Name</button>     
+</div>
+<ul class="hero-list">
+    <li ng-repeat="hero in $ctrl.heroes | orderBy:$ctrl.orderProp:$ctrl.reverse">
+        <h5>{{hero.name}}</h5>
+        <p>{{hero.occupation}}</p>
+    </li>
+</ul>

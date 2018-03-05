@@ -9,8 +9,13 @@
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="app.module.js"></script>
+    <script src="hero-list/hero-list.module.js"></script>
+    <script src="hero-list/hero-list.component.js"></script>
   </head>
   <body>
-    <div>{{Initial settings for app}}</div>
+    <header>
+      <h1 ng-controller="heroesCntrl as heroesCntrl">{{heroesCntrl.title}}</h1>
+    </header>
+    <hero-list></hero-list>
   </body>
 </html>
