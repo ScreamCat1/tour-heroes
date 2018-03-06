@@ -1,12 +1,19 @@
+<h2 class="title">who's who</h2>
 <div class="hero-list-sort" >
   sorted by:
-  <button ng-click="$ctrl.toggleSorted()">Name</button>     
+  <button ng-click="$ctrl.sort('name')">Name</button>
+  <button ng-click="$ctrl.sort('occupation')">Occupation</button>     
 </div>
-<ul class="hero-list">
-  <li ng-repeat="hero in $ctrl.heroes | orderBy:$ctrl.orderProp:$ctrl.reverse">
-    <h5>
-      <a href="#/hero-detail/{{hero.name}}">{{hero.name}}</a>
-    </h5>
-    <p>{{hero.occupation}}</p>
+<ul class="row hero-list">
+  <li ng-repeat="hero in $ctrl.heroes | orderBy:$ctrl.orderProp:$ctrl.reverse" class="hero-list-item hero-item">
+    <a href="#/hero-detail/{{hero.name}}" class="hero-list_link">
+      <img ng-src="images/{{hero.img}}" alt="{{hero.name}}" class="hero-list-img">
+      <h5 class="hero-list-item_header">
+        {{hero.name | uppercase}}
+      </h5>
+      <p class="hero-list-item_description">
+        {{hero.occupation | capitalize}}
+      </p>
+    </a>
   </li>
 </ul>

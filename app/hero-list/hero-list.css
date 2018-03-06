@@ -1,0 +1,46 @@
+.title {
+  text-transform: uppercase;
+  font-size: 105px;
+  color: #0282f9;
+}
+
+.hero-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.hero-list-item {
+  position: relative;
+
+  width: 25%;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+
+.hero-list-item_description {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+
+  padding: 10px;
+  margin: 0;
+
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero-list-item_header {
+  font-weight: bold;
+  text-align: center;
+}
+
+.hero-list_link {
+  display: block;
+  
+  width: 184px;
+}
+
+.hero-list-img {
+  width: 184px;
+}

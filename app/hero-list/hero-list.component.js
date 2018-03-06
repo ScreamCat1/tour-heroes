@@ -1,46 +1,25 @@
 angular.module('heroList')
   .component('heroList', {
     templateUrl: 'hero-list/hero-list.template.html',
-    controller: heroCntrl
+    controller: [
+      '$http',
+      heroCntrl
+    ]
 });
 
-function heroCntrl() {
+function heroCntrl($http) {
   var self = this;
   self.orderProp = 'name';
   self.reverse = false;
-  self.toggleSorted = toggleSorted;
-  self.heroes = [
-    {
-      name: 'superman',
-      occupation: 'reporter'
-    },
-    {
-      name: 'batman',
-      occupation: 'CEO of Wayne Enterprises'
-    },
-    {
-      name: 'wonder woman',
-      occupation: 'Amazon Princess'
-    },
-    {
-      name: 'green lantern',
-      occupation: 'test pilot'
-    },
-    {
-      name: 'the flash',
-      occupation: 'Forensic scientist'
-    },
-    {
-      name: 'aquaman',
-      occupation: 'King of Atlantis'
-    },
-    {
-      name: 'cyborg',
-      occupation: 'Former student'
-    }
-  ];
+  self.sort = sort;
 
-  function toggleSorted() {
-    self.reverse = !self.reverse;    
+  function sort(string) {
+    self.reverse = self.orderProp === string ? !self.reverse : false;    
+    self.orderProp = string
   }
+
+  $http.get('heroes/heroes.json')
+    .then(function(response) {
+      self.heroes = response.data;
+    })
 }

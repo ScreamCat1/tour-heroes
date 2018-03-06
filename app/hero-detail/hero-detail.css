@@ -13,12 +13,15 @@
 	margin-bottom: 30px;
 
 	font-size: 24px;
+	font-weight: bold;
 }
 
 .hero-detail-longtitle {
 	font-size: 20px;
 
 	margin-bottom: 60px;
+
+	transition: 0.5s linear all;
 }
 
 .hero-detail-character-wrap {
@@ -48,4 +51,21 @@
 	font-weight: bold;
 
 	max-width: 35%;
+}
+
+.link-back {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	padding: 10px;
+	
+	font-weight: bold;
+	color: blue;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.hero-detail-longtitle.ng-hide {
+  opacity: 0;
 }

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "superman",
+    "occupation": "reporter",
+    "img": "superman.jpg" 
+  },
+  {
+    "name": "batman",
+    "occupation": "CEO of Wayne Enterprises",
+    "img": "batman.jpg"
+  },
+  {
+    "name": "wonder woman",
+    "occupation": "Amazon Princess",
+    "img": "wonder_woman.jpg"
+  },
+  {
+    "name": "green lantern",
+    "occupation": "test pilot",
+    "img": "green_lantern.jpg"
+  },
+  {
+    "name": "the flash",
+    "occupation": "Forensic scientist",
+    "img": "the_flash.jpg"
+  },
+  {
+    "name": "aquaman",
+    "occupation": "King of Atlantis",
+    "img": "aquaman.jpg"
+  },
+  {
+    "name": "cyborg",
+    "occupation": "Former student",
+    "img": "cyborg.jpg"
+  }
+]

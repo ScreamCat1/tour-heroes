@@ -1,0 +1,14 @@
+{
+  "name": "THE FLASH",
+  "img": "the flash-large-img.jpg",
+  "description": "Indy cars, bullet trains, supersonic aircraft… The Flash leaves them all in the dust.",
+  "longtitle": "Young Barry Allen’s life stopped the minute his mother was murdered. The true killer never found, its mystery obsessed Barry, driving him to become a forensic scientist. Consumed by his work, he spent his life chained to his desk, solving every case that flew across it. But when a freak lightning bolt hits a nearby shelf in his lab, Barry receives super-speed, becoming the Flash. Now, he’ll race up buildings, across oceans, and around the world to get his man—while getting introduced to a world so much bigger than his old life of microscopes and cold cases. Able to run at near light-speeds, his powers provide the ultimate caffeine kick: He can run up buildings, move so swiftly he phases through objects, create sonic booms with the snap of his fingers—and never need to order delivery. Despite his speed, Barry can become so obsessed with crime-solving he can still lose track of everything else around him, leaving the fastest man alive constantly running a minute behind.",
+  "character facts": {
+    "powers": "super speed, intangibility, superhuman agility",
+    "occupation": "Forensic scientist",
+    "alias/AKA": "Scarlet Speedster, The Fastest Man Alive",
+    "facebook": "http://www.facebook.com/theflash",
+    "first appearance": "FLASH COMICS #1 (1940)",
+    "real name": "Barry Allen"
+  }
+}

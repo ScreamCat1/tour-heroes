@@ -4,40 +4,44 @@
 	<div class="hero-detail-img-wrap">
 		<img ng-src="images/{{$ctrl.hero.img}}" alt="{{$ctrl.hero.name}}">
 	</div>
-	<div class="row hero-detail-description">
+</div>
+<a href="/" class="link-back">go back</a>
+<div class="row row__small">
+	<div class="hero-detail-description">
 		{{$ctrl.hero.description}}
 	</div>
-	<p class="row hero-detail-longtitle">
-		{{$ctrl.hero.longtitle}}
+	<p ng-show="$ctrl.isShowed" class="row hero-detail-longtitle">
+			{{$ctrl.hero.longtitle}}
 	</p>
+	<button ng-click="$ctrl.showMore()">{{$ctrl.showMessage}}</button>
 </div>
 <div class="row hero-detail-character-wrap">
 	<ul class="hero-detail-character-list">
-		<li class="hero-detail-character-field">
+		<li ng-if="$ctrl.hero['character facts'].powers" class="hero-detail-character-field">
 			<span class="hero-detail-character-type">Powers:</span>
 			<span>{{$ctrl.hero['character facts'].powers}}</span>
 		</li>
-		<li class="hero-detail-character-field">
+		<li ng-if="$ctrl.hero['character facts'].occupation" class="hero-detail-character-field">
 			<span class="hero-detail-character-type">Occupation:</span>
 			<span>{{$ctrl.hero['character facts'].occupation}}</span>
 		</li>
-		<li class="hero-detail-character-field">
+		<li ng-if="$ctrl.hero['character facts']['alias/AKA']" class="hero-detail-character-field">
 			<span class="hero-detail-character-type">Alias/AKA:</span>
 			<span>{{$ctrl.hero['character facts']['alias/AKA']}}</span>
 		</li>
 	</ul>
 	<ul class="hero-detail-character-list">
-		<li class="hero-detail-character-field">
+		<li ng-if="$ctrl.hero['character facts'].facebook" class="hero-detail-character-field">
 			<span class="hero-detail-character-type">Facebook:</span>
 			<span>
 				<a ng-href="{{$ctrl.hero['character facts'].facebook}}">{{$ctrl.hero['character facts'].facebook}}</a>
 			</span>
 		</li>
-		<li class="hero-detail-character-field">
+		<li ng-if="$ctrl.hero['character facts']['first appearance']" class="hero-detail-character-field">
 			<span class="hero-detail-character-type">First Appearence:</span>
 			<span>{{$ctrl.hero['character facts']['first appearance']}}</span>
 		</li>
-		<li class="hero-detail-character-field">
+		<li ng-if="$ctrl.hero['character facts']['real name']" class="hero-detail-character-field">
 			<span class="hero-detail-character-type">Real Name:</span>
 			<span>{{$ctrl.hero['character facts']['real name']}}</span>
 		</li>

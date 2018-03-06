@@ -1,4 +1,21 @@
+ul, ol {
+  list-style-type: none;
+}
+
 .row {
-    max-width: 1280px;
-    margin: 0 auto;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.row__small {
+	max-width: 800px;
+}
+
+a {
+	text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+	color: slategray;
 }
