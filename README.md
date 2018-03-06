@@ -1,1 +1,1 @@
-#Simple app Tour of Heroesgit
+**Simple app Tour of Heroes**
